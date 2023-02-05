@@ -12,7 +12,7 @@ boxEl.forEach((box)=>{
   const data=box.dataset.item;
   if(data.includes(searchText)){
     box.style.display='block';
-  }else{
+  }else{ 
     box.style.display = "none";
   }
 });
@@ -24,7 +24,8 @@ btnEl.forEach((button)=>{
   button.addEventListener('click',(e)=>{
     e.preventDefault();
     setActiveBtn(e);
-    const btnfilter=e.target.dataset.filter;
+    const btnfi
+    lter=e.target.dataset.filter;
 
     boxEl.forEach((box)=>{
       if(btnfilter=='all'){
